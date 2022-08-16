@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pokecard {
+  background: url(assets/watermark-pokeball.svg) right center no-repeat;
+}
