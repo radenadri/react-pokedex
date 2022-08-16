@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import shallow from "zustand/shallow";
 
@@ -38,7 +38,7 @@ const App = () => {
     } catch (err) {
       console.error(err);
     }
-  }
+  };
 
   const handleTypeChange = async (e) => {
     const { name } = pokemonType.find(type => type.name === e.target.value);

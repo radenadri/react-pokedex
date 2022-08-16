@@ -10,7 +10,6 @@ const Homepage = ({ allPokemons, fetchPokemons, handleTypeChange, pokemonType })
     <Layout>
       <Header handleTypeChange={handleTypeChange} pokemonType={pokemonType} />
       <InfiniteScroll
-        scrollThreshold={'400px'}
         dataLength={allPokemons.length}
         next={fetchPokemons}
         hasMore={true}
